@@ -1,0 +1,110 @@
+.ssp-settings-wrap {
+  max-width: 1350px;
+  margin: 50px auto;
+  padding: 4em 3.5em;
+  background: rgba(15,25,35,0.95);
+  border-radius: 28px;
+  backdrop-filter: blur(14px);
+  box-shadow: 0 18px 65px rgba(0,0,0,0.35);
+  font-family: IRANSans, Vazirmatn, "Segoe UI", sans-serif;
+  direction: rtl;
+  color: #ffffff;
+  line-height: 1.9;
+}
+
+.ssp-settings-wrap h1 {
+  color: #FFFFFF !important ;
+  display: flex;
+  align-items: center;
+  font-size: 2.5em;
+  font-weight: 700;
+  margin-bottom: 2em;
+  color: #FFFFFF;
+}
+
+.ssp-settings-wrap h1 img {
+  height: 55px;
+  width: auto;
+}
+
+.ssp-fieldset {
+  margin-top: 2.5em;
+  padding: 2.5em;
+  border: 2px solid #1ECAD3;
+  border-radius: 15px;
+  background: rgba(255,255,255,0.08);
+  backdrop-filter: blur(6px);
+}
+
+.ssp-fieldset legend {
+  font-weight: 700;
+  font-size: 1.3em;
+  color: #fff;
+  padding: 0.5em 1.2em;
+  border-radius: 8px;
+  background: rgba(30,202,211,0.35);
+}
+
+.ssp-fieldset label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.7em;
+  margin-bottom: 0.7em;
+  color: #fff;
+  cursor: pointer;
+  user-select: none;
+}
+
+.ssp-fieldset input[type="checkbox"] {
+  accent-color: #1ECAD3;
+  transform: scale(1.2);
+}
+
+.select2-container--default .select2-selection--multiple {
+  background-color: rgba(255,255,255,0.05);
+  border: 1px solid #1ECAD3;
+  border-radius: 12px;
+  min-height: 42px;
+  color: #ffffff;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice {
+  background-color: #1ECAD3;
+  color: #fff;
+  border-radius: 6px;
+  padding: 0 0.5em;
+  margin: 2px 3px 2px 0;
+}
+
+.select2-container--default .select2-search--inline .select2-search__field::placeholder {
+  color: rgba(255,255,255,0.7);
+}
+
+input[type="submit"].button-primary {
+  background: #1ECAD3;
+  color: #fff;
+  font-weight: 700;
+  padding: 0.85em 2.2em;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+input[type="submit"].button-primary:hover {
+  background: #0f99a7;
+  transform: scale(1.03);
+  box-shadow: 0 6px 25px rgba(30,202,211,0.35);
+}
+
+@media (max-width: 1100px) {
+  .ssp-settings-wrap { padding: 3em 2em; }
+  .ssp-fieldset { padding: 2em; }
+  .ssp-fieldset label { font-size: 1em; }
+  .select2-container--default .select2-selection--multiple { min-height: 38px; }
+}
+
+@media (max-width: 700px) {
+  .ssp-settings-wrap { padding: 2em 1.2em; }
+  .ssp-fieldset { padding: 1.5em; }
+}

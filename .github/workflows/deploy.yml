@@ -1,0 +1,32 @@
+name: SAM Deploy System
+
+on:
+  release:
+    types: [released]
+
+jobs:
+  deploy-plugin:
+    name: Deploy Plugin to WP.org
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Deploy plugin folder
+        uses: 10up/action-wordpress-plugin-deploy@stable
+        with:
+          plugin_slug: sam-scroll-master
+          build_dir: plugin
+          generate-zip: true
+        env:
+          SVN_USERNAME: ${{ secrets.SVN_USERNAME }}
+          SVN_PASSWORD: ${{ secrets.SVN_PASSWORD }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
+
+      - name: Upload zip to release
+        uses: softprops/action-gh-release@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          files: "*.zip"
