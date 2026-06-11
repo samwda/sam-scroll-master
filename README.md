@@ -39,6 +39,7 @@
   Manage which user roles and devices experience this effect.
 - **Custom Content Support**  
   Works seamlessly with all post types and custom content.
+- **Accessibility**: Fully respects `prefers-reduced-motion` media query. If a user has requested reduced motion in their system settings, the smooth scroll will not activate, preserving native browser behavior.
 
 ---
 
