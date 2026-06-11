@@ -16,11 +16,13 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
+      - name: Prepare files for deployment
+        run: |
+
       - name: Deploy plugin folder
         uses: 10up/action-wordpress-plugin-deploy@2.2.0
         with:
           plugin_slug: sam-scroll-master
-          build_dir: plugin
           generate-zip: true
         env:
           SVN_USERNAME: ${{ secrets.SVN_USERNAME }}
