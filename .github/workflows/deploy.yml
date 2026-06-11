@@ -18,7 +18,7 @@ jobs:
 
       - name: Prepare files for deployment
         run: |
-         cp -r plugin/* .
+          cp -r plugin/* .
 
 
       - name: Deploy plugin folder
