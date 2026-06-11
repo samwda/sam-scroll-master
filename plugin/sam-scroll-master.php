@@ -2,7 +2,7 @@
 /*
  * Plugin Name: Sam Scroll Master
  * Description: Enhance your website's user experience with Sam Scroll Master.
- * Version:     1.0
+ * Version:     1.1
  * Author:      SAM Web Design Agency
  * Author URI:  https://samwda.ir
  * License: GPLv2
