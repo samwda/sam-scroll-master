@@ -2,10 +2,10 @@
 Contributors: samwda, smahjoob
 Donate link: https://samwda.ir
 Tags: smooth scroll, scroll, JavaScript, simple plugin
-Requires at least: 6.0
-Tested up to: 6.9
+Requires at least: 6.4
+Tested up to: 7.0
 Requires PHP: 7.4
-Stable tag: 1.0
+Stable tag: 1.1
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -21,6 +21,7 @@ Modern, secure, and highly configurable smooth scroll plugin for WordPress.
 * Exclude posts, pages, custom post types, or taxonomies.
 * Control per user role or guest users.
 * Responsive support for desktop, tablet, and mobile.
+* Accessibility ready
 
 == Installation ==
 
@@ -49,6 +50,10 @@ Absolutely. SSM supports exclusions for any post type or taxonomy, including cus
 Yes. You can enable it optionally for WordPress admin panel.
 
 == Changelog ==
+
+= 1.1 =
+Accessibility: Respect user's prefers-reduced-motion setting – smooth scroll automatically disabled when reduced motion is requested.
+Code review: Full code audit and compatibility testing performed on WordPress 7.
 
 = 1.0 =
 Initial public release with settings page.
