@@ -19,12 +19,13 @@ jobs:
       - name: Prepare files for deployment
         run: |
           cp -r plugin/* .
-
+          rm -rf plugin
 
       - name: Deploy plugin folder
-        uses: 10up/action-wordpress-plugin-deploy@2.2.0
+        uses: 10up/action-wordpress-plugin-deploy@stable
         with:
           plugin_slug: sam-scroll-master
+          build_dir: .
           generate-zip: true
         env:
           SVN_USERNAME: ${{ secrets.SVN_USERNAME }}
