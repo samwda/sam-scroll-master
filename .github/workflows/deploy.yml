@@ -18,6 +18,8 @@ jobs:
 
       - name: Prepare files for deployment
         run: |
+         cp -r plugin/* .
+
 
       - name: Deploy plugin folder
         uses: 10up/action-wordpress-plugin-deploy@2.2.0
