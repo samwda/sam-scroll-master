@@ -4,13 +4,15 @@ jQuery(document).ready(function ($) {
   }
 
   var $select = $('#samsm-excluded-pages');
+
   if ($select.length) {
     $select.select2({
-      placeholder: "Search posts/pages",
-      allowClear: true,
+      placeholder: 'Search posts/pages...',
+      // allowClear removed — it has no effect on multiple selects.
+      minimumInputLength: 2,
       ajax: {
         url: samsmAdmin.ajax_url,
-        dataType: "json",
+        dataType: 'json',
         delay: 250,
         data: function (params) {
           return {
