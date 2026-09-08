@@ -6,7 +6,6 @@
 
 **Sam Scroll Master (SSM)** is a modern, secure, and highly configurable WordPress plugin that enables smooth scrolling on your website. Its stylish admin panel allows you to enable/disable the feature on the frontend or admin, control access by user role and device type, and exclude pages, post types, custom post types, or taxonomy terms.
 
-
 ![Banner](https://ps.w.org/sam-scroll-master/assets/banner-1544x500.png)
 
 ---
@@ -15,6 +14,7 @@
 - Smooth scroll for anchor links on the frontend and optionally the admin panel
 - User role and device-based control
 - Exclusions for pages, post types, custom post types, and taxonomies
+- Automatic cache purge on settings save (WP Rocket, LiteSpeed Cache, W3 Total Cache, and more)
 - Fully responsive and RTL-compatible
 
 ---
@@ -39,6 +39,8 @@
   Manage which user roles and devices experience this effect.
 - **Custom Content Support**  
   Works seamlessly with all post types and custom content.
+- **Automatic Cache Purging**  
+  Whenever settings are saved, caches of all supported cache plugins (WP Rocket, LiteSpeed Cache, W3 Total Cache, WP Super Cache, WP Fastest Cache, WP Optimize, SG Optimizer, Autoptimize, Hummingbird, Cache Enabler, Breeze, Swift Performance) are purged automatically – changes take effect immediately.
 - **Accessibility**: Fully respects `prefers-reduced-motion` media query. If a user has requested reduced motion in their system settings, the smooth scroll will not activate, preserving native browser behavior.
 
 ---
@@ -54,12 +56,13 @@
 ## 🌍 SEO & Performance
 - Optimized to work with all modern themes.
 - Enhances user experience without compromising site speed.
+- Integrates with popular cache plugins – no stale cache after saving settings.
 
 ---
 
 ## 🛡 License
 
-Released under the GPLv2 or later. JavaScript Library Released under the MIT Licence
+Released under the GPLv2 or later. JavaScript Library Released under the MIT License
 
 ---
 
