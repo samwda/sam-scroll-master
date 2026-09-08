@@ -2,29 +2,40 @@
   max-width: 1350px;
   margin: 50px auto;
   padding: 4em 3.5em;
-  background: rgba(15,25,35,0.95);
+  background: rgba(15, 25, 35, 0.95);
   border-radius: 28px;
   backdrop-filter: blur(14px);
-  box-shadow: 0 18px 65px rgba(0,0,0,0.35);
+  box-shadow: 0 18px 65px rgba(0, 0, 0, 0.35);
   font-family: IRANSans, Vazirmatn, "Segoe UI", sans-serif;
-  direction: rtl;
+  /* direction: rtl removed — inherits from WP admin locale automatically */
   color: #ffffff;
   line-height: 1.9;
 }
 
 .ssp-settings-wrap h1 {
-  color: #FFFFFF !important ;
+  color: #ffffff;
   display: flex;
   align-items: center;
   font-size: 2.5em;
   font-weight: 700;
   margin-bottom: 2em;
-  color: #FFFFFF;
 }
 
 .ssp-settings-wrap h1 img {
   height: 55px;
   width: auto;
+  margin-inline-end: 0.5em;
+}
+
+.ssp-settings-wrap .ssp-description {
+  color: rgba(255, 255, 255, 0.85);
+  font-style: italic;
+  margin-bottom: 2.5em;
+  line-height: 1.8;
+}
+
+.ssp-settings-wrap .notice {
+  margin-bottom: 2em;
 }
 
 .ssp-fieldset {
@@ -32,7 +43,7 @@
   padding: 2.5em;
   border: 2px solid #1ECAD3;
   border-radius: 15px;
-  background: rgba(255,255,255,0.08);
+  background: rgba(255, 255, 255, 0.08);
   backdrop-filter: blur(6px);
 }
 
@@ -42,7 +53,15 @@
   color: #fff;
   padding: 0.5em 1.2em;
   border-radius: 8px;
-  background: rgba(30,202,211,0.35);
+  background: rgba(30, 202, 211, 0.35);
+}
+
+.ssp-exclusion-block {
+  margin-top: 1.5em;
+}
+
+.ssp-tax-block {
+  margin-top: 1em;
 }
 
 .ssp-fieldset label {
@@ -61,7 +80,7 @@
 }
 
 .select2-container--default .select2-selection--multiple {
-  background-color: rgba(255,255,255,0.05);
+  background-color: rgba(255, 255, 255, 0.05);
   border: 1px solid #1ECAD3;
   border-radius: 12px;
   min-height: 42px;
@@ -77,7 +96,7 @@
 }
 
 .select2-container--default .select2-search--inline .select2-search__field::placeholder {
-  color: rgba(255,255,255,0.7);
+  color: rgba(255, 255, 255, 0.7);
 }
 
 input[type="submit"].button-primary {
@@ -94,7 +113,7 @@ input[type="submit"].button-primary {
 input[type="submit"].button-primary:hover {
   background: #0f99a7;
   transform: scale(1.03);
-  box-shadow: 0 6px 25px rgba(30,202,211,0.35);
+  box-shadow: 0 6px 25px rgba(30, 202, 211, 0.35);
 }
 
 @media (max-width: 1100px) {
